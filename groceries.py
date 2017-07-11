@@ -26,7 +26,7 @@ products = [{"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks
 
 print("--------------")
 print("THERE ARE " + str(len(products)) + " PRODUCTS:")
-products_alpha_order = sorted(products, key=operator.itemgetter('name'))
+products_alpha_order = sorted(products, key=operator.itemgetter("name"))
 for item in products_alpha_order:
     print(" + " + item["name"] + " (" + '${0:.2f}'.format(item["price"]) + ")")
 
